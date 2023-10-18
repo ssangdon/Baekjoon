@@ -13,10 +13,11 @@ function solution(input) {
       return console.log(result.join(" "));
     }
     for (var i = 0; i < arr.length; i++) {
+      if (result.at(-1) !== undefined && arr.indexOf(result.at(-1)) > i)
+        continue;
       result.push(arr[i]);
       back(arr, num - 1, result);
       result.pop();
-      console.log(111111);
     }
   };
   back(arr, m, []);
