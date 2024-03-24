@@ -21,5 +21,6 @@ function solution(input) {
     }
   };
   back(arr, m, []);
+  
 }
 solution(inputs);
