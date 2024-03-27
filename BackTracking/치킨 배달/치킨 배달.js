@@ -52,6 +52,7 @@ function solution(input) {
         }
         sum += min;
       }
+
       a = Math.min(a, sum);
     });
   }
